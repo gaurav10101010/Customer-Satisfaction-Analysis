@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "GrandSlang-Roman";
+    src: url("/static/fonts/GrandSlang-Roman.otf") format("woff2");
+}
+@font-face {
+    font-family: "GrandSlang-Italic";
+    src: url("/static/fonts/GrandSlang-Italic.otf") format("woff2");
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #F7B267;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.card {
+    background-color: #f25e5ce2;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card h2 {
+    margin-top: 0;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #461220f6;
+}
+.form-group input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+.form-group label.inline {
+    display: inline-block;
+    margin-right: 20px;
+}
+.form-group .radio-group {
+    display: flex;
+    align-items: center;
+}
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-submit:hover {
+    background-color: #ddd;
+    color: black;
+}

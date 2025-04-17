@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 2.5rem;
+            color: #00aaff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .input-detail {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #b0b0b0;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Your customer will be {{ output }}</h2>
+
+        <div class="input-detail">Age: {{ age }}</div>
+        <div class="input-detail">Flight Distance: {{ flight_distance }}</div>
+        <div class="input-detail">Inflight Entertainment: {{ inflight_entertainment }}</div>
+        <div class="input-detail">Baggage Handling: {{ baggage_handling }}</div>
+        <div class="input-detail">Cleanliness: {{ cleanliness }}</div>
+        <div class="input-detail">Departure Delay: {{ departure_delay }} minutes</div>
+        <div class="input-detail">Arrival Delay: {{ arrival_delay }} minutes</div>
+        <div class="input-detail">Gender: {{ gender }}</div>
+        <div class="input-detail">Customer Type: {{ customer_type }}</div>
+        <div class="input-detail">Type of Travel: {{ travel_type }}</div>
+        <div class="input-detail">Class Type: {{ class_type }}</div>
+
+        <div class="footer">
+            <a href="/" class="btn">Back to Home</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Experience Survey</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('aero.png'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="number"], input[type="text"], select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        select {
+            cursor: pointer;
+        }
+        button {
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .input-group span {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Flight Experience Survey</h1>
+        <form action="/prediction" method="post">
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                <span>Enter your age in years.</span>
+            </div>
+
+            <div class="input-group">
+                <label for="flight_distance">Flight Distance (in km):</label>
+                <input type="number" id="flight_distance" name="flight_distance" required>
+                <span>Enter the distance of the flight in kilometers.</span>
+            </div>
+
+            <div class="input-group">
+                <label for="inflight_entertainment">Inflight Entertainment (1-5):</label>
+                <input type="number" id="inflight_entertainment" name="inflight_entertainment" min="1" max="5" required>
+                <span>Rate the inflight entertainment from 1 (poor) to 5 (excellent).</span>
+            </div>
+
+            <div class="input-group">
+                <label for="baggage_handling">Baggage Handling (1-5):</label>
+                <input type="number" id="baggage_handling" name="baggage_handling" min="1" max="5" required>
+                <span>Rate the baggage handling from 1 (poor) to 5 (excellent).</span>
+            </div>
+
+            <div class="input-group">
+                <label for="cleanliness">Cleanliness (1-5):</label>
+                <input type="number" id="cleanliness" name="cleanliness" min="1" max="5" required>
+                <span>Rate the cleanliness of the flight from 1 (poor) to 5 (excellent).</span>
+            </div>
+
+            <div class="input-group">
+                <label for="departure_delay">Departure Delay (in minutes):</label>
+                <input type="number" id="departure_delay" name="departure_delay" required>
+                <span>Enter the delay at departure in minutes.</span>
+            </div>
+
+            <div class="input-group">
+                <label for="arrival_delay">Arrival Delay (in minutes):</label>
+                <input type="number" id="arrival_delay" name="arrival_delay" required>
+                <span>Enter the delay at arrival in minutes.</span>
+            </div>
+
+            <div class="input-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="customer_type">Customer Type:</label>
+                <select id="customer_type" name="customer_type" required>
+                    <option value="loyal">Loyal Customer</option>
+                    <option value="new">New Customer</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="class_type">Class:</label>
+                <select id="class_type" name="class_type" required>
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first">First</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="travel_type">Type of Travel:</label>
+                <select id="travel_type" name="travel_type" required>
+                    <option value="personal">Personal</option>
+                    <option value="business">Business</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

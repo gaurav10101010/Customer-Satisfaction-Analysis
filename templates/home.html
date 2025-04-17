@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Project</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: #343a40;
+            padding: 0.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.75rem;
+        }
+        .navbar-brand:hover {
+            color: #00c6ff;
+        }
+        .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #00c6ff;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: #ffffff;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .hero-section p {
+            font-size: 1.25rem;
+        }
+        .hero-section .btn {
+            font-size: 1.1rem;
+            padding: 10px 30px;
+            border-radius: 25px;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .feature-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #ffffff;
+        }
+        .footer a:hover {
+            color: #00c6ff;
+        }
+        ul {
+            padding-left: 20px; /* Maintain padding for list bullets */
+        }
+        ul li {
+            margin-bottom: 10px; /* Adjust this value to increase space between items */
+        }
+        ul ul li {
+            margin-bottom: 5px; /* Adjust this value to increase space between nested items */
+        }
+        @media (max-width: 767px) {
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Customer Satisfaction</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4">Welcome to Our Customer Satisfaction Project</h1>
+            <p class="lead">Enhancing your experience with our dedicated solutions and services.</p>
+            <a class="btn btn-light btn-lg" href="/project">Take the survey</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="feature-card p-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-person-check"></i>
+                    </div>
+                    <h3>Personalized Service</h3>
+                    <p><strong> satisfaction in airlines is crucial for maintaining competitive advantage in an industry where choices are abundant and loyalty can be fickle. Passengers expect not only safe and timely travel but also a high standard of service throughout their journey, from booking to arrival. Key factors influencing satisfaction include the comfort of seating, the quality of in-flight services, and the efficiency of customer support during disruptions or delays. Airlines that excel in managing these aspects and responding effectively to feedback can foster a positive reputation and build a loyal customer base. In an era where travelers can easily share their experiences online, maintaining high levels of customer satisfaction is essential for driving repeat business and generating favorable reviews, ultimately impacting an airline's market position and profitability.</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-card p-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-bar-chart-line"></i>
+                    </div>
+                    <h1>Technologies Used in Enhancing Customer Satisfaction in Airlines</h1>
+                    <ul>
+                        <li><strong>HTML and CSS</strong>: 
+                            <ul>
+                                <li><strong>HTML</strong>: Structures the content of airline websites, including flight information and customer support pages.</li>
+                                <li><strong>CSS</strong>: Styles and visually enhances web pages, ensuring a pleasant and intuitive user experience.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Bootstrap</strong>: Provides responsive design elements and pre-designed components.</li>
+                        <li><strong>Python</strong>: 
+                            <ul>
+                                <li>Utilized for backend development, handling server-side logic, and integrating with databases to manage customer data and interactions.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Flask</strong>: A Python web framework used to build and deploy web applications, such as customer support systems.</li>
+                        <li><strong>Logistic Regression</strong>: Employed to analyze customer feedback and satisfaction data, predicting trends and identifying factors influencing passenger experiences.</li>
+                        <li><strong>SQL</strong>: Manages and retrieves large volumes of customer and operational data efficiently, enabling personalized service and effective data-driven decision-making.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-card p-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-gear"></i>
+                    </div>
+                    <h3>Continuous Improvement</h3>
+                    <p>Regular updates and improvements based on customer input.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Customer Satisfaction Project. All rights reserved. <br><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Icons (for feature icons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+</body>
+</html>
